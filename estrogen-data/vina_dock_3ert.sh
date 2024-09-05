@@ -1,4 +1,5 @@
- iterations=1
+ligands_directory="estrogen-data/erDecoy-ago_pdbqt"
+iterations=1
 for ligand_path in "$ligands_directory"/*
 do
     ligand_name=$(basename "$ligand_path" | cut -f1 -d '.')
