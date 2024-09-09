@@ -1,7 +1,7 @@
-ligands_directory="estrogen-data/erDecoy-ago_pdbqt"
-output_directory="estrogen-data/erDecoy-ago_pdbqt_log"
-receptor_path="estrogen-data/3ERT.pbdqt"
-config_directory="estrogen-data/config-3ert.txt"
+ligands_directory="erDecoy-ago_pdbqt"
+output_directory="erDecoy-ago_log"
+receptor_path="3ert.pbdqt"
+config_directory="config-3ert.txt"
 iterations=1
 for ligand_path in "$ligands_directory"/*
 do

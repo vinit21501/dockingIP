@@ -1,6 +1,6 @@
 ligands_directory="erLigand-ago_pdbqt"
 output_directory="erLigand-ago_log"
-receptor_path="1GWQ_A.pbdqt"
+receptor_path="1gwq_a.pbdqt"
 config_directory="config-1gwq_a.txt"
 iterations=1
 for ligand_path in "$ligands_directory"/*
