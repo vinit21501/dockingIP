@@ -1,5 +1,5 @@
-ligands_directory="erDecoy-ago_pdbqt"
-output_directory="erDecoy-ago_log"
+ligands_directory="erDecoy-ant_pdbqt"
+output_directory="erDecoy-ant_log"
 receptor_path="3ert.pbdqt"
 config_directory="config-3ert.txt"
 iterations=1

@@ -16,4 +16,28 @@
 
 WARNING: The search space volume > 27000 Angstrom^3 (See FAQ)
 WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
-Reading input ... 
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: -932761203
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1         -8.5      0.000      0.000
+   2         -8.2      0.856      6.146
+   3         -7.7     21.056     22.510
+   4         -7.5     18.595     20.498
+   5         -7.5     21.156     22.660
+   6         -7.2     18.612     20.130
+   7         -7.2     18.787     20.218
+   8         -7.1     18.116     20.545
+   9         -6.9     17.822     19.892
+  10         -6.6     18.177     20.162
+Writing output ... done.

@@ -1,6 +1,6 @@
-ligands_directory="erLigand-ago_pdbqt"
-output_directory="erLigand-ago_log"
-receptor_path="1gwq_a.pbdqt"
+ligands_directory="erDecoy-ago_pdbqt"
+output_directory="erDecoy-ago_log"
+receptor_path="1gwq_a.pdbqt"
 config_directory="config-1gwq_a.txt"
 iterations=1
 for ligand_path in "$ligands_directory"/*
@@ -13,6 +13,6 @@ do
     echo -e "\n" > "$output_directory/$ligand_name/LOG.txt"
     for ((i=1; i<=iterations; i++))
     do
-        ./vina --receptor "$receptor_path" --ligand "$ligand_path" --config "$config_directory" --cpu 48 --exhaustiveness 10 --num_modes 10 --out "$output_directory/$ligand_name/${i}_out.pdbqt" --energy_range 20 >> "$output_directory/$ligand_name/LOG.txt"
+        ./vina --receptor "$receptor_path" --ligand "$ligand_path" --config "$config_directory" --cpu 96 --exhaustiveness 10 --num_modes 10 --out "$output_directory/$ligand_name/${i}_out.pdbqt" --energy_range 20 >> "$output_directory/$ligand_name/LOG.txt"
     done
 done
