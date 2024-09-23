@@ -8,13 +8,14 @@ def createComplex(receptor_path, ligand_path):
         if line[:4] == "ATOM":
             ligand_cleand.append(line)
         elif line[:6] == "CONECT":
-            ligand_cleand.append(line)
-        elif line[:6] == "MASTER":
-            ligand_cleand.append(line)
-        # elif line[:6] == "CONECT" or line[:6] == "MASTER" or line[:6] == "ENDMDL":
-        elif line[:6] == "ENDMDL":
-            ligand_cleand.append("END\n")
             break
+        #     ligand_cleand.append(line)
+        # elif line[:6] == "MASTER":
+        #     ligand_cleand.append(line)
+        # # elif line[:6] == "CONECT" or line[:6] == "MASTER" or line[:6] == "ENDMDL":
+        # elif line[:6] == "ENDMDL":
+        #     ligand_cleand.append("END\n")
+        #     break
     with open(ligand_path[:-4] + '_complex.pdb', 'w') as f:
         f.writelines(receptor + ligand_cleand)
 
